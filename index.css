@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: linear-gradient( to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%)) fixed;
+    height: 100%;
+    min-height: 610px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    position: relative;
+    top: 50%;
+    margin: -250px auto;
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+}
+
+
+/* .container {
+    float: left;
+} */
+
+.image {
+    width: 40%;
+    height: 100%;
+    background: url('images/illustration-woman-online-desktop.svg') right 70px no-repeat, url('images/bg-pattern-desktop.svg') right -280px;
+    background-size: 380px auto, auto 900px;
+}
+
+.mobile {
+    display: none;
+}
+
+.box {
+    margin: 152px 0 0 -95px;
+}
+
+.faq {
+    width: 60%;
+    height: 100%;
+    padding: 50px;
+}
+
+h1 {
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 30px;
+}
+
+h4 {
+    color: hsl(237, 12%, 33%);
+    margin-bottom: 10px;
+}
+
+h5,
+h4 {
+    display: inline-block;
+}
+
+h5 {
+    color: hsl(240, 6%, 50%);
+}
+
+h5:active {
+    color: hsl(14, 88%, 65%);
+}
+
+h4:hover,
+h5:hover {
+    cursor: pointer;
+}
+
+.img {
+    position: absolute;
+    left: 105%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ques-item {
+    position: relative;
+    width: 90%
+}
+
+hr {
+    height: 0;
+    border: 0;
+    border-top: 1px solid hsl(240, 5%, 91%);
+}
+
+.ques-item,
+hr {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    main {
+        width: 300px;
+        height: 500px;
+        margin-top: -200px;
+        margin-bottom: 100px;
+    }
+    .image {
+        background: url('images/bg-pattern-mobile.svg') bottom no-repeat;
+        background-size: 200px auto;
+        width: 200px;
+        height: 175px;
+        position: absolute;
+        top: -90px;
+        left: 50px;
+    }
+    .mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .box {
+        display: none;
+    }
+    .faq {
+        width: 100%;
+        height: auto;
+        padding: 100px 30px 30px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .ques-item,
+    hr {
+        margin-top: 12px;
+    }
+    h4 {
+        margin-bottom: 0px;
+    }
+}
